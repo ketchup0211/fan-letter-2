@@ -10,7 +10,7 @@ function TelegramForm() {
   );
 
   const addLocalStorage = (event) => {
-    event.preventDefault();
+    //event.preventDefault();
     const creationTime = getCurrentTime();
     const newData = {
       message,
@@ -23,7 +23,6 @@ function TelegramForm() {
     const updatedData = [newData, ...oldData];
 
     localStorage.setItem(receiver, JSON.stringify(updatedData));
-    console.log("SUCCESS");
   };
   return (
     <form className={style.container} onSubmit={addLocalStorage}>
