@@ -1,0 +1,35 @@
+.link{
+  font-family: GangwonEduPowerExtraBoldA;
+  font-size: 80px;
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  background-image: url("images/chim-ha-ha.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+  border-bottom: 3px dashed black;
+}
+
+.subtitle{
+  margin-top: 6px;
+  font-family: NEXON Lv2 Gothic;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('@/assets/fonts/GangwonEduPower.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('@/assets/fonts/NEXONLv2GothicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

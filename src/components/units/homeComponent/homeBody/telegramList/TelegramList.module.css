@@ -1,0 +1,30 @@
+.container{
+  height: 500px;
+  padding-top: 31.5px;
+  border-top: 3px dashed black;
+  overflow-y: scroll;
+  background-color: #f6ebe2;
+  text-align: center;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.alert{
+  color: black;
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('@/assets/fonts/GangwonEduPower.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('@/assets/fonts/NEXONLv2GothicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -4,7 +4,7 @@ import MessageEditingField from "./messageEditingField/MessageEditingField";
 import getLocalData from "@/util/getLocalData";
 import { toggleMod, modifyMessage } from "@/redux/modules/DetailModReducer";
 import { updateMessage } from "@/redux/modules/DetailDataReducer";
-
+import style from "./DetailBody.module.css";
 //  DetailBody.jsx
 function DetailBody() {
   const navigate = useNavigate();
@@ -64,14 +64,21 @@ function DetailBody() {
   };
 
   return (
-    <div>
-      <p>Sender. {sender}</p>
-      {modify ? <MessageEditingField /> : <p>{message}</p>}
-      <div>
-        <button onClick={modify ? handleSetModified : handleSetEditing}>
+    <div className={style.container}>
+      <p className={style.sender}>Sender. {sender}</p>
+      {modify ? (
+        <MessageEditingField />
+      ) : (
+        <p className={style.message}>{message}</p>
+      )}
+      <div className={style.buttons}>
+        <button
+          className={style.button}
+          onClick={modify ? handleSetModified : handleSetEditing}
+        >
           {modify ? "수정 완료" : "수정"}
         </button>
-        <button onClick={handleCancelOrDelete}>
+        <button className={style.button} onClick={handleCancelOrDelete}>
           {modify ? "취소" : "삭제"}
         </button>
       </div>

@@ -1,0 +1,33 @@
+.field{
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid black;
+  height: 130px;
+  width: 100%;
+  resize: none;
+  background-color: white;
+  font-family: NEXON Lv2 Gothic;
+}
+
+.field:focus{
+  outline-color: #f39009;
+}
+
+.field:focus::placeholder {
+  color: transparent;
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('@/assets/fonts/GangwonEduPower.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('@/assets/fonts/NEXONLv2GothicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

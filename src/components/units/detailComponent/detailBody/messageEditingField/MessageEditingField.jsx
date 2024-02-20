@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { modifyMessage } from "@/redux/modules/DetailModReducer";
-
+import style from "./MessageEditingField.module.css";
 //  MessageEditingField.jsx
 function MessageEditingField() {
   const dispatch = useDispatch();
@@ -11,6 +11,7 @@ function MessageEditingField() {
   };
   return (
     <textarea
+      className={style.field}
       type="text"
       name="message"
       maxLength={150}

@@ -1,0 +1,22 @@
+.container{
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin: 50px 30px 0px 30px;
+}
+
+.container::-wevkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('@/assets/fonts/GangwonEduPower.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('@/assets/fonts/NEXONLv2GothicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

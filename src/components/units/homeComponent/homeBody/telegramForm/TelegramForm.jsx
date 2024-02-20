@@ -1,7 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import FormMessage from "./form/FormMessage";
 import getCurrentTime from "@/util/getCurrentTime";
 import FormSender from "./form/FormSender";
+import style from "./TelegramForm.module.css";
 
 function TelegramForm() {
   const { receiver, sender, message } = useSelector(
@@ -25,11 +26,11 @@ function TelegramForm() {
     console.log("SUCCESS");
   };
   return (
-    <form onSubmit={addLocalStorage}>
-      <p>To. {receiver} 님께</p>
+    <form className={style.container} onSubmit={addLocalStorage}>
+      <p className={style.receiver}>To. {receiver} 님께</p>
       <FormMessage />
       <FormSender />
-      <button>전송하기</button>
+      <button className={style.button}>전송하기</button>
     </form>
   );
 }
