@@ -1,15 +1,14 @@
-import { createStore } from "redux";
-import { combineReducers } from "redux";
-import DetailDataReducer from "../modules/DetailDataReducer";
-import DetailModReducer from "../modules/DetailModReducer";
-import MainDataReducer from "../modules/MainDataReducer";
+import detailData from "../modules/DetailDataReducer";
+import detailMod from "../modules/DetailModReducer";
+import mainData from "../modules/MainDataReducer";
+import { configureStore } from "@reduxjs/toolkit";
 
-const rootReducer = combineReducers({
-  DetailDataReducer: DetailDataReducer,
-  DetailModReducer: DetailModReducer,
-  MainDataReducer: MainDataReducer,
+const store = configureStore({
+  reducer: {
+    DetailDataReducer: detailData,
+    DetailModReducer: detailMod,
+    MainDataReducer: mainData,
+  },
 });
-
-const store = createStore(rootReducer);
 
 export default store;
