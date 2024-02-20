@@ -1,4 +1,5 @@
 import { configMessage } from "@/redux/modules/MainDataReducer";
+import dynamicHeight from "@/util/setDynamicHeight";
 import { useDispatch, useSelector } from "react-redux";
 
 function FormMessage() {
@@ -6,7 +7,7 @@ function FormMessage() {
   const message = useSelector((state) => state.MainDataReducer.message);
 
   const onMessageChange = (event) => {
-    //dynamicHeight(event);
+    dynamicHeight(event);
     dispatch(configMessage(event.target.value));
   };
   return (

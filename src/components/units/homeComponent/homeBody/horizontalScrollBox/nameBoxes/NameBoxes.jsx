@@ -1,3 +1,4 @@
+import { configReceiver } from "@/redux/modules/MainDataReducer";
 import charactersDataList from "@/shared/charactersDataList";
 import { useDispatch, useSelector } from "react-redux";
 function NameBoxes() {

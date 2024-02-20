@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "../pages/home/Home.jsx";
+import Home from "@/pages/home/Home.jsx";
 import Detail from "../pages/detail/Detail.jsx";
 
 const Router = () => {
@@ -7,7 +7,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/detail/:receiver/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   );
