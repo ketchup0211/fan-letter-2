@@ -35,6 +35,7 @@ function SignUpForm({ setLogin }) {
           password: newPW,
           nickname: newNickname,
         });
+        console.log("hi");
         if (data.success) {
           alert("회원가입 성공");
           dispatch(logIn());
