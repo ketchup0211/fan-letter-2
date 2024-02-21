@@ -38,7 +38,7 @@ function SignUpForm({ setLogin }) {
         console.log("hi");
         if (data.success) {
           alert("회원가입 성공");
-          dispatch(logIn());
+          //dispatch(logIn());
         }
       } catch (error) {
         alert(`회원가입 실패. ${error.message}.\n ERROR CODE : ${error.code}`);
