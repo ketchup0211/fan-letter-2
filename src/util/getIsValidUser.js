@@ -8,7 +8,6 @@ async function getIsValidUser(accessToken) {
         Authorization: `Bearer ${accessToken}`,
       },
     });
-    console.log(response.data);
     return true;
   } catch (error) {
     return false;
