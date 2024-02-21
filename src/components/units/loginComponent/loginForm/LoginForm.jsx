@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { logIn } from "@/redux/modules/AuthReducer";
 import axios from "axios";
 const SERVER_API_URL = "https://moneyfulpublicpolicy.co.kr";
+const QUERY_STRING = "?expiresIn=1m";
 
 function LoginForm({ setLogin }) {
   const dispatch = useDispatch();
@@ -27,10 +28,13 @@ function LoginForm({ setLogin }) {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await axios.post(SERVER_API_URL + "/login", {
-        id: userID,
-        password: userPW,
-      });
+      const { data } = await axios.post(
+        SERVER_API_URL + "/login" + QUERY_STRING,
+        {
+          id: userID,
+          password: userPW,
+        }
+      );
       const { accessToken, avatar, nickname, userId } = data;
       if (data.success) {
         alert("로그인 성공");
