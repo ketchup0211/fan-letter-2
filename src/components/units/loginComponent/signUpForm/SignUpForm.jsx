@@ -29,17 +29,21 @@ function SignUpForm({ setLogin }) {
   const handleSignUp = async (event) => {
     event.preventDefault();
     if (isValid({ id: newID, password: newPW, nickname: newNickname })) {
-      const { message, success } = await axios.post(
-        SERVER_API_URL + "/register",
-        {
+      try {
+        const { data } = await axios.post(SERVER_API_URL + "/register", {
           id: newID,
           password: newPW,
           nickname: newNickname,
+        });
+        if (data.success) {
+          alert("회원가입 성공");
+          dispatch(logIn());
         }
-      );
-      dispatch(logIn());
+      } catch (error) {
+        alert(`회원가입 실패. ${error.message}.\n ERROR CODE : ${error.code}`);
+      }
     } else {
-      //return
+      return;
     }
   };
 
@@ -71,7 +75,7 @@ function SignUpForm({ setLogin }) {
     return password.length > 3 && password.length < 16;
   };
   const _isValidNickname = (nickname) => {
-    return password.length > 0 && password.length < 11;
+    return nickname.length > 0 && nickname.length < 11;
   };
   return (
     <>
