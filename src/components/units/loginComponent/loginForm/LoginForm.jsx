@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { logIn } from "@/redux/modules/AuthReducer";
 import axios from "axios";
 const SERVER_API_URL = "https://moneyfulpublicpolicy.co.kr";
-const QUERY_STRING = "?expiresIn=1m";
+const QUERY_STRING = "?expiresIn=40m";
 
 function LoginForm({ setLogin }) {
   const dispatch = useDispatch();
