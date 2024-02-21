@@ -10,7 +10,6 @@ import {
 } from "@/redux/modules/DetailDataReducer";
 import { useDispatch } from "react-redux";
 import { initModMessage } from "@/redux/modules/DetailModReducer";
-import Layout from "@/components/commons/layout/Layout";
 
 function Detail() {
   const params = useParams();
@@ -30,7 +29,6 @@ function Detail() {
   //  Main
   return (
     <>
-      <Layout />
       <DetailHeader />
       <DetailBody />
     </>
