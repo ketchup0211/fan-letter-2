@@ -33,7 +33,7 @@ function LoginForm({ setLogin }) {
       });
       if (data.success) {
         alert("로그인 성공");
-        dispatch(logIn());
+        dispatch(logIn(data.accessToken));
       }
     } catch (error) {
       alert(`로그인 실패. ${error.message}.\n ERROR CODE : ${error.code}`);
