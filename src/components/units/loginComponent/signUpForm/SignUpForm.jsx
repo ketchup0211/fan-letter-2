@@ -1,6 +1,9 @@
 import { useState } from "react";
 import style from "./SignUpForm.module.css";
+import { useDispatch } from "react-redux";
+import { logIn } from "@/redux/modules/AuthReducer";
 function SignUpForm({ setLogin }) {
+  const dispatch = useDispatch();
   const [newID, setNewID] = useState("");
   const [newPW, setNewPW] = useState("");
   const [newNickname, setNewnickname] = useState("");
@@ -23,7 +26,7 @@ function SignUpForm({ setLogin }) {
   const handleSignUp = (event) => {
     event.preventDefault();
     if (isValid) {
-      //SignUp
+      dispatch(logIn());
     } else {
       //return
     }

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import style from "./LoginForm.module.css";
+import { useDispatch } from "react-redux";
+import { logIn } from "@/redux/modules/AuthReducer";
 function LoginForm({ setLogin }) {
+  const dispatch = useDispatch();
   const [userID, setUserID] = useState("");
   const [userPW, setUserPW] = useState("");
   const filled = userID !== "" && userPW !== "";
@@ -20,6 +23,7 @@ function LoginForm({ setLogin }) {
 
   const handleLogin = (event) => {
     event.preventDefault();
+    dispatch(logIn());
   };
 
   const handleToggleSignUp = () => {

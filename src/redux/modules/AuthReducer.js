@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 //  redux 모듈로 authSlice.js 를 만들고 로그인 상태를 전역 상태로 관리하도록 하세요.
-initialState = {
+const initialState = {
   isLoggedIn: false,
 };
 
