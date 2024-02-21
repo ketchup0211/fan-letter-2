@@ -8,6 +8,42 @@
       "message": "안녕하세요",
       "avatar": null,
       "creationTime": "2024. 2. 22. 오전 1:06:33"
+    },
+    {
+      "id": "db05d569-97d1-42e3-a1f1-f6977adb22e4",
+      "sender": "poiuy",
+      "userId": "poiuy",
+      "receiver": "침착맨",
+      "message": "오호호 너무 어려운걸?",
+      "avatar": null,
+      "creationTime": "2024. 2. 22. 오전 3:10:10"
+    },
+    {
+      "id": "bf61b3bc-979b-479d-abb9-df2a68b102d2",
+      "sender": "poiuy",
+      "userId": "poiuy",
+      "receiver": "침착맨",
+      "message": "밤낮이 바뀌어서 큰일이야",
+      "avatar": "null",
+      "creationTime": "2024. 2. 22. 오전 3:10:22"
+    },
+    {
+      "id": "f68598f5-6f3c-47cc-87a1-f00ccba9e03e",
+      "sender": "poiuy",
+      "userId": "poiuy",
+      "receiver": "주우재",
+      "message": "꺽다리는 꺽꺽하고 웃지",
+      "avatar": null,
+      "creationTime": "2024. 2. 22. 오전 3:24:15"
+    },
+    {
+      "id": "a1b1fbe5-c16d-4a83-a032-50ddc71262cf",
+      "sender": "poiuy",
+      "userId": "poiuy",
+      "receiver": "주우재",
+      "message": "하핳",
+      "avatar": "null",
+      "creationTime": "2024. 2. 22. 오전 3:24:21"
     }
   ]
 }
