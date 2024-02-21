@@ -68,12 +68,24 @@
 .active{
   height: 80%;
   border: 2px solid black;
-  background-color: #efefef;
+  background-color: #f39009;
   color: black;
 }
 
 .active:hover{
-  background-color: #f39009;
+  background-color: #ecb76d;
+}
+
+.disabled{
+  height: 80%;
+  border: 2px solid black;
+  background-color: #ecb76d;
+  color: gray;
+  cursor:not-allowed;
+}
+
+.disabled:hover{
+  color:grey;
 }
 
 @font-face {
