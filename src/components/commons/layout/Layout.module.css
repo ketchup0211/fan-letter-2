@@ -1,0 +1,50 @@
+.navigation{
+  height: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 15px;
+}
+
+.link {
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: NEXON Lv2 Gothic;
+}
+
+.link:hover{
+  color:#fca600;
+}
+
+.buttons{
+  display: flex;
+  gap:10px;
+}
+
+.button {
+  border : none;
+  color: white;
+  background-color: transparent;
+  font-size: 12px;
+  font-family: NEXON Lv2 Gothic;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: #fca600;
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('@/assets/fonts/GangwonEduPower.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('@/assets/fonts/NEXONLv2GothicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
