@@ -2,22 +2,8 @@
   text-align: right;
   font-size: 21px;
   font-family: NEXON Lv2 Gothic;
-  margin-top: 20px;
-}
-
-.input{
-  font-family: NEXON Lv2 Gothic;
-  border-width: 0px;
-  font-size: 18px;
-  width: 190px;
-}
-
-.input:focus{
-  outline: none;
-}
-
-.input:focus::placeholder{
-  color: transparent;
+  margin-top: 10px;
+  padding-right: 10px;
 }
 
 @font-face {
