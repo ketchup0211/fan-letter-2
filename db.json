@@ -8,42 +8,6 @@
       "message": "안녕하세요",
       "avatar": null,
       "creationTime": "2024. 2. 22. 오전 1:06:33"
-    },
-    {
-      "id": "4f92ee39-cdd3-4e54-b76e-e4fb0b8683e8",
-      "sender": "poiuy",
-      "userId": "poiuy",
-      "receiver": "침착맨",
-      "message": "aa",
-      "avatar": "null",
-      "creationTime": "2024. 2. 22. 오전 1:09:51"
-    },
-    {
-      "id": "0c0129f1-07a9-4e90-9ee0-588e6cc24bda",
-      "sender": "poiuy",
-      "userId": "poiuy",
-      "receiver": "침착맨",
-      "message": "aa",
-      "avatar": "null",
-      "creationTime": "2024. 2. 22. 오전 1:09:52"
-    },
-    {
-      "id": "1c441162-c348-4edb-957b-b51f1224f32d",
-      "sender": "poiuy",
-      "userId": "poiuy",
-      "receiver": "침착맨",
-      "message": "aa",
-      "avatar": "null",
-      "creationTime": "2024. 2. 22. 오전 1:10:12"
-    },
-    {
-      "id": "094a6847-09dc-4d47-9789-5163dc1d6819",
-      "sender": "poiuy",
-      "userId": "poiuy",
-      "receiver": "배성재",
-      "message": "ddd",
-      "avatar": "null",
-      "creationTime": "2024. 2. 22. 오전 1:11:47"
     }
   ]
 }

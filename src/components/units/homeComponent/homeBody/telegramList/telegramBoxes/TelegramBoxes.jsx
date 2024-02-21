@@ -1,10 +1,14 @@
-import getLocalData from "@/util/getLocalData";
+import { useEffect, useState } from "react";
 import TelegramBox from "./telegramBox/TelegramBox";
 import { useSelector } from "react-redux";
 
-function TelegramBoxes() {
+function TelegramBoxes({ letters }) {
   const receiver = useSelector((state) => state.MainDataReducer.receiver);
-  const data = getLocalData(receiver);
+  const [data, setData] = useState(letters);
+
+  useEffect(() => {
+    setData(letters);
+  }, [letters]);
   return (
     <>
       {data.map(({ id, sender, message, creationTime }) => (

@@ -15,7 +15,6 @@ function TelegramForm() {
   const setLetters = async (newLetter) => {
     try {
       await axios.post(DB_URL + "/letters", newLetter);
-      //re-render
       return true;
     } catch (error) {
       console.error(error);
@@ -24,7 +23,6 @@ function TelegramForm() {
   };
 
   const addLetter = async (event) => {
-    event.preventDefault();
     const creationTime = getCurrentTime();
     const newLetter = {
       sender: nickname,
