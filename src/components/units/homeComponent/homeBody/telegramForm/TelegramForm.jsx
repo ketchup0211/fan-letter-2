@@ -5,16 +5,15 @@ import FormSender from "./form/FormSender";
 import style from "./TelegramForm.module.css";
 
 function TelegramForm() {
-  const { receiver, sender, message } = useSelector(
-    (state) => state.MainDataReducer
-  );
-
+  const { receiver, message } = useSelector((state) => state.MainDataReducer);
+  const { avatar, nickname } = useSelector((store) => store.AuthReducer);
   const addLocalStorage = (event) => {
     //event.preventDefault();
     const creationTime = getCurrentTime();
     const newData = {
       message,
-      sender,
+      sender: nickname,
+      avatar,
       creationTime,
       id: crypto.randomUUID(),
     };
