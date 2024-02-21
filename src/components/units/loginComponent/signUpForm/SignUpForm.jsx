@@ -2,6 +2,9 @@ import { useState } from "react";
 import style from "./SignUpForm.module.css";
 import { useDispatch } from "react-redux";
 import { logIn } from "@/redux/modules/AuthReducer";
+import axios from "axios";
+const SERVER_API_URL = "https://moneyfulpublicpolicy.co.kr";
+
 function SignUpForm({ setLogin }) {
   const dispatch = useDispatch();
   const [newID, setNewID] = useState("");
@@ -23,9 +26,17 @@ function SignUpForm({ setLogin }) {
         return;
     }
   };
-  const handleSignUp = (event) => {
+  const handleSignUp = async (event) => {
     event.preventDefault();
-    if (isValid) {
+    if (isValid({ id: newID, password: newPW, nickname: newNickname })) {
+      const { message, success } = await axios.post(
+        SERVER_API_URL + "/register",
+        {
+          id: newID,
+          password: newPW,
+          nickname: newNickname,
+        }
+      );
       dispatch(logIn());
     } else {
       //return
