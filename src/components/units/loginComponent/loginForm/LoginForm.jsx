@@ -31,9 +31,10 @@ function LoginForm({ setLogin }) {
         id: userID,
         password: userPW,
       });
+      const { accessToken, avatar, nickname, userId } = data;
       if (data.success) {
         alert("로그인 성공");
-        dispatch(logIn(data.accessToken));
+        dispatch(logIn({ accessToken, avatar, nickname, userId }));
       }
     } catch (error) {
       alert(`로그인 실패. ${error.message}.\n ERROR CODE : ${error.code}`);
