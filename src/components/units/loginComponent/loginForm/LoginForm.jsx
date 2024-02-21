@@ -21,9 +21,20 @@ function LoginForm({ setLogin }) {
     }
   };
 
-  const handleLogin = (event) => {
+  const handleLogin = async (event) => {
     event.preventDefault();
-    dispatch(logIn());
+    try {
+      const { data } = await axios.post(SERVER_API_URL + "/login", {
+        id: userID,
+        password: userPW,
+      });
+      if (data.success) {
+        alert("로그인 성공");
+        dispatch(logIn());
+      }
+    } catch (error) {
+      alert(`로그인 실패. ${error.message}.\n ERROR CODE : ${error.code}`);
+    }
   };
 
   const handleToggleSignUp = () => {
