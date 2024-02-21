@@ -8,7 +8,7 @@ function DetailHeader() {
   const { sender, receiver } = useSelector((state) => state.DetailDataReducer);
   return (
     <div className={style.container}>
-      <button className={style.button} onClick={() => navigate("/")}>
+      <button className={style.button} onClick={() => navigate("/home")}>
         홈으로
       </button>
       <p className={style.title}>

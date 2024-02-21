@@ -9,7 +9,7 @@
       "@redux/*" : ["src/redux/*"],
       "@shared/*" : ["src/shared/*"],
       "@util/*": ["src/util/*"],
-      "@context/*" : ["src/context/*"]
+      "@storage/*" : ["src/storage/*"]
     }
   },
   "include": ["src", "**/*.js", "**/*.jsx"],

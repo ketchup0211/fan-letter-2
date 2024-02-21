@@ -5,7 +5,7 @@ function TelegramBox({ sender, receiver, message, creationTime, id }) {
   return (
     <div
       className={style.container}
-      onClick={() => navigate(`detail/${receiver}/${id}`)}
+      onClick={() => navigate(`/detail/${receiver}/${id}`)}
     >
       <img className={style.image} src="/images/profile.jpg" alt="profile" />
       <div className={style.contents}>

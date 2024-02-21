@@ -34,7 +34,7 @@ function DetailBody() {
     }
 
     dispatch(toggleMod());
-    navigate("/");
+    navigate("/home");
   };
 
   const handleCancelOrDelete = () => {
@@ -55,7 +55,7 @@ function DetailBody() {
           const updatedData = parsedData.filter((e) => e.id !== id);
 
           localStorage.setItem(receiver, JSON.stringify(updatedData));
-          navigate("/");
+          navigate("/home");
         } catch (error) {
           console.error("Error parsing data from localStorage:", error);
         }
