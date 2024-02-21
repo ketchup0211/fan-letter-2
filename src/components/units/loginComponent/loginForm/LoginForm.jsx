@@ -2,6 +2,9 @@ import { useState } from "react";
 import style from "./LoginForm.module.css";
 import { useDispatch } from "react-redux";
 import { logIn } from "@/redux/modules/AuthReducer";
+import axios from "axios";
+const SERVER_API_URL = "https://moneyfulpublicpolicy.co.kr";
+
 function LoginForm({ setLogin }) {
   const dispatch = useDispatch();
   const [userID, setUserID] = useState("");
